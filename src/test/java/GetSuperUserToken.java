@@ -1,6 +1,3 @@
-import io.restassured.RestAssured;
-import io.restassured.http.ContentType;
-import io.restassured.response.Response;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -15,10 +12,9 @@ import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import static io.restassured.RestAssured.given;
 
 
-public class SuperUserToken extends Setup {
+public class GetSuperUserToken extends Setup {
 
     private String getAndCompareTimeStamps(List<String> tokenLines) {
         Pattern pattern = Pattern.compile(Resources.returnRegExPattern("timestamp"), Pattern.DOTALL);
@@ -64,7 +60,7 @@ public class SuperUserToken extends Setup {
         String keyLine = null;
         String SuperUserToken = null;
         try {
-            scanner = new Scanner(new File("/Users/emmanuel.pius-ogiji/Downloads/TeamCity/logs/teamcity-server.log"));
+            scanner = new Scanner(new File("/opt/teamcity/logs/teamcity-server.log"));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
             System.out.println("File not found");
@@ -77,7 +73,7 @@ public class SuperUserToken extends Setup {
             }
         }
         if (tokenLines.size() > 1) {
-                keyLine = getAndCompareTimeStamps(tokenLines);
+            keyLine = getAndCompareTimeStamps(tokenLines);
         }
         else {
             keyLine = tokenLines.get(0);
@@ -89,17 +85,7 @@ public class SuperUserToken extends Setup {
             SuperUserToken = matcher.group(0);
 
         }
-        System.out.println("SuperUserToken is " + SuperUserToken);
-        System.out.println("createAdminNewUser is running");
-        RestAssured.baseURI = prop.getProperty("HOST");
-        System.out.println(RestAssured.baseURI);
-        Response res = given().auth().basic("",SuperUserToken).
-                body(Resources.postAdminUserBody()).contentType(ContentType.JSON).header("Origin",prop.getProperty("HOST")).
-                when().
-                post(Resources.postNewUser()).
-                then().
-                extract().response();
-        System.out.println(res.asString());
-        }
+        System.out.println("GetSuperUserToken is " + SuperUserToken);
+    }
 
 }

@@ -1,0 +1,99 @@
+[2019-01-15 10:20:14,569]   INFO -  jetbrains.buildServer.STARTUP - Path to the startup configuration file: /opt/teamcity/bin/../conf/teamcity-startup.properties
+[2019-01-15 10:20:14,653]   INFO -  jetbrains.buildServer.STARTUP - 
+
+
+
+
+
+
+[2019-01-15 10:20:14,657]   INFO -  jetbrains.buildServer.STARTUP - ===========================================================
+[2019-01-15 10:20:14,657]   INFO -  jetbrains.buildServer.STARTUP - Starting TeamCity server
+[2019-01-15 10:20:14,890]   INFO -  jetbrains.buildServer.STARTUP - TeamCity version: 2018.2 (build 60925), data format version 875
+[2019-01-15 10:20:14,893]   INFO -  jetbrains.buildServer.STARTUP - OS: Linux, version 4.9.125-linuxkit, amd64, Current user: root, Time zone: GMT (UTC)
+[2019-01-15 10:20:14,894]   INFO -  jetbrains.buildServer.STARTUP - Java: 1.8.0_192, OpenJDK 64-Bit Server VM (25.192-b12, mixed mode), OpenJDK Runtime Environment (1.8.0_192-b12), Oracle Corporation; JVM parameters: -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -Djava.util.logging.config.file=/opt/teamcity/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djdk.tls.ephemeralDHKeySize=2048 -Djava.protocol.handler.pkgs=org.apache.catalina.webresources -Dorg.apache.catalina.security.SecurityListener.UMASK=0027 -Xmx512m -Dteamcity.configuration.path=../conf/teamcity-startup.properties -Dlog4j.configuration=file:/opt/teamcity/bin/../conf/teamcity-server-log4j.xml -Dteamcity_logs=/opt/teamcity/bin/../logs -Djava.awt.headless=true -Dignore.endorsed.dirs= -Dcatalina.base=/opt/teamcity -Dcatalina.home=/opt/teamcity -Djava.io.tmpdir=/opt/teamcity/temp
+[2019-01-15 10:20:14,895]   INFO -  jetbrains.buildServer.STARTUP - Garbage collection: PS Scavenge, PS MarkSweep
+[2019-01-15 10:20:14,895]   INFO -  jetbrains.buildServer.STARTUP - Web server version: Apache Tomcat/8.5.32
+[2019-01-15 10:20:14,896]   INFO -  jetbrains.buildServer.STARTUP - Server IP address: 172.21.0.2
+[2019-01-15 10:20:14,898]   INFO -  jetbrains.buildServer.STARTUP - Web server ports: 8111 (protocol: HTTP/1.1, scheme: http), 8105 (shutdown port)
+[2019-01-15 10:20:14,899]   INFO -  jetbrains.buildServer.STARTUP - Context path: "/", servlet real path: "/opt/teamcity/webapps/ROOT"
+[2019-01-15 10:20:14,905]   INFO -  jetbrains.buildServer.STARTUP - TeamCity distribution type: docker-ubuntu
+[2019-01-15 10:20:14,906]   INFO -  jetbrains.buildServer.STARTUP - TeamCity server node id: MAIN_SERVER
+[2019-01-15 10:20:14,910]   INFO -  jetbrains.buildServer.STARTUP - Version file lock was successfully obtained: /opt/teamcity/webapps/ROOT/BUILD_60925
+[2019-01-15 10:20:14,920]   INFO -  jetbrains.buildServer.STARTUP - Current stage: Looking for the TeamCity Data Directory
+[2019-01-15 10:20:14,920]   INFO -  jetbrains.buildServer.STARTUP - The TeamCity Data Directory path is determined using the environment variable TEAMCITY_DATA_PATH
+[2019-01-15 10:20:14,927]   INFO -  jetbrains.buildServer.STARTUP - The TeamCity Data Directory "/data/teamcity_server/datadir" exists
+[2019-01-15 10:20:14,928]   INFO -  jetbrains.buildServer.STARTUP - Asking user to confirm first start with the predefined TeamCity Data Directory path
+[2019-01-15 10:20:14,938]   INFO -  jetbrains.buildServer.STARTUP - Startup confirmation is required. Open TeamCity web page in the browser. Server is running at http://localhost:8111
+[2019-01-15 10:20:14,938]   INFO -  jetbrains.buildServer.STARTUP - Current stage: Confirming TeamCity first start (administrator login is required to proceed)
+[2019-01-15 10:23:44,833]   INFO -  jetbrains.buildServer.STARTUP - Server shutdown event received
+[2019-01-15 10:23:44,833]   INFO -  jetbrains.buildServer.STARTUP - Current stage: TeamCity server is shutting down
+[2019-01-15 10:23:44,834]   INFO -  jetbrains.buildServer.STARTUP - Stopping the main application
+[2019-01-15 10:23:44,834]   INFO -  jetbrains.buildServer.STARTUP - The main servlet is not initialized, nothing to shut down.
+[2019-01-15 10:23:44,835]   INFO -  jetbrains.buildServer.STARTUP - Version file lock was released: /opt/teamcity/webapps/ROOT/BUILD_60925
+[2019-01-15 10:23:44,836]   INFO -  jetbrains.buildServer.STARTUP - Server shutdown complete
+[2019-01-15 10:27:44,674]   INFO -  jetbrains.buildServer.STARTUP - Path to the startup configuration file: /opt/teamcity/bin/../conf/teamcity-startup.properties
+[2019-01-15 10:27:44,734]   INFO -  jetbrains.buildServer.STARTUP - 
+
+
+
+
+
+
+[2019-01-15 10:27:44,737]   INFO -  jetbrains.buildServer.STARTUP - ===========================================================
+[2019-01-15 10:27:44,737]   INFO -  jetbrains.buildServer.STARTUP - Starting TeamCity server
+[2019-01-15 10:27:45,019]   INFO -  jetbrains.buildServer.STARTUP - TeamCity version: 2018.2 (build 60925), data format version 875
+[2019-01-15 10:27:45,023]   INFO -  jetbrains.buildServer.STARTUP - OS: Linux, version 4.9.125-linuxkit, amd64, Current user: root, Time zone: GMT (UTC)
+[2019-01-15 10:27:45,023]   INFO -  jetbrains.buildServer.STARTUP - Java: 1.8.0_192, OpenJDK 64-Bit Server VM (25.192-b12, mixed mode), OpenJDK Runtime Environment (1.8.0_192-b12), Oracle Corporation; JVM parameters: -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -Djava.util.logging.config.file=/opt/teamcity/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djdk.tls.ephemeralDHKeySize=2048 -Djava.protocol.handler.pkgs=org.apache.catalina.webresources -Dorg.apache.catalina.security.SecurityListener.UMASK=0027 -Xmx512m -Dteamcity.configuration.path=../conf/teamcity-startup.properties -Dlog4j.configuration=file:/opt/teamcity/bin/../conf/teamcity-server-log4j.xml -Dteamcity_logs=/opt/teamcity/bin/../logs -Djava.awt.headless=true -Dignore.endorsed.dirs= -Dcatalina.base=/opt/teamcity -Dcatalina.home=/opt/teamcity -Djava.io.tmpdir=/opt/teamcity/temp
+[2019-01-15 10:27:45,024]   INFO -  jetbrains.buildServer.STARTUP - Garbage collection: PS Scavenge, PS MarkSweep
+[2019-01-15 10:27:45,025]   INFO -  jetbrains.buildServer.STARTUP - Web server version: Apache Tomcat/8.5.32
+[2019-01-15 10:27:45,025]   INFO -  jetbrains.buildServer.STARTUP - Server IP address: 172.22.0.2
+[2019-01-15 10:27:45,028]   INFO -  jetbrains.buildServer.STARTUP - Web server ports: 8111 (protocol: HTTP/1.1, scheme: http), 8105 (shutdown port)
+[2019-01-15 10:27:45,029]   INFO -  jetbrains.buildServer.STARTUP - Context path: "/", servlet real path: "/opt/teamcity/webapps/ROOT"
+[2019-01-15 10:27:45,036]   INFO -  jetbrains.buildServer.STARTUP - TeamCity distribution type: docker-ubuntu
+[2019-01-15 10:27:45,036]   INFO -  jetbrains.buildServer.STARTUP - TeamCity server node id: MAIN_SERVER
+[2019-01-15 10:27:45,040]   INFO -  jetbrains.buildServer.STARTUP - Version file lock was successfully obtained: /opt/teamcity/webapps/ROOT/BUILD_60925
+[2019-01-15 10:27:45,051]   INFO -  jetbrains.buildServer.STARTUP - Current stage: Looking for the TeamCity Data Directory
+[2019-01-15 10:27:45,052]   INFO -  jetbrains.buildServer.STARTUP - The TeamCity Data Directory path is determined using the environment variable TEAMCITY_DATA_PATH
+[2019-01-15 10:27:45,060]   INFO -  jetbrains.buildServer.STARTUP - The TeamCity Data Directory "/data/teamcity_server/datadir" exists
+[2019-01-15 10:27:45,061]   INFO -  jetbrains.buildServer.STARTUP - Asking user to confirm first start with the predefined TeamCity Data Directory path
+[2019-01-15 10:27:45,071]   INFO -  jetbrains.buildServer.STARTUP - Startup confirmation is required. Open TeamCity web page in the browser. Server is running at http://localhost:8111
+[2019-01-15 10:27:45,072]   INFO -  jetbrains.buildServer.STARTUP - Current stage: Confirming TeamCity first start (administrator login is required to proceed)
+[2019-01-15 10:48:08,959]   INFO -  jetbrains.buildServer.STARTUP - Server shutdown event received
+[2019-01-15 10:48:08,959]   INFO -  jetbrains.buildServer.STARTUP - Current stage: TeamCity server is shutting down
+[2019-01-15 10:48:08,960]   INFO -  jetbrains.buildServer.STARTUP - Stopping the main application
+[2019-01-15 10:48:08,961]   INFO -  jetbrains.buildServer.STARTUP - The main servlet is not initialized, nothing to shut down.
+[2019-01-15 10:48:08,962]   INFO -  jetbrains.buildServer.STARTUP - Version file lock was released: /opt/teamcity/webapps/ROOT/BUILD_60925
+[2019-01-15 10:48:08,962]   INFO -  jetbrains.buildServer.STARTUP - Server shutdown complete
+[2019-01-15 10:48:33,774]   INFO -  jetbrains.buildServer.STARTUP - Path to the startup configuration file: /opt/teamcity/bin/../conf/teamcity-startup.properties
+[2019-01-15 10:48:33,826]   INFO -  jetbrains.buildServer.STARTUP - 
+
+
+
+
+
+
+[2019-01-15 10:48:33,829]   INFO -  jetbrains.buildServer.STARTUP - ===========================================================
+[2019-01-15 10:48:33,830]   INFO -  jetbrains.buildServer.STARTUP - Starting TeamCity server
+[2019-01-15 10:48:34,083]   INFO -  jetbrains.buildServer.STARTUP - TeamCity version: 2018.2 (build 60925), data format version 875
+[2019-01-15 10:48:34,086]   INFO -  jetbrains.buildServer.STARTUP - OS: Linux, version 4.9.125-linuxkit, amd64, Current user: root, Time zone: GMT (UTC)
+[2019-01-15 10:48:34,087]   INFO -  jetbrains.buildServer.STARTUP - Java: 1.8.0_192, OpenJDK 64-Bit Server VM (25.192-b12, mixed mode), OpenJDK Runtime Environment (1.8.0_192-b12), Oracle Corporation; JVM parameters: -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -Djava.util.logging.config.file=/opt/teamcity/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djdk.tls.ephemeralDHKeySize=2048 -Djava.protocol.handler.pkgs=org.apache.catalina.webresources -Dorg.apache.catalina.security.SecurityListener.UMASK=0027 -Xmx512m -Dteamcity.configuration.path=../conf/teamcity-startup.properties -Dlog4j.configuration=file:/opt/teamcity/bin/../conf/teamcity-server-log4j.xml -Dteamcity_logs=/opt/teamcity/bin/../logs -Djava.awt.headless=true -Dignore.endorsed.dirs= -Dcatalina.base=/opt/teamcity -Dcatalina.home=/opt/teamcity -Djava.io.tmpdir=/opt/teamcity/temp
+[2019-01-15 10:48:34,088]   INFO -  jetbrains.buildServer.STARTUP - Garbage collection: PS Scavenge, PS MarkSweep
+[2019-01-15 10:48:34,088]   INFO -  jetbrains.buildServer.STARTUP - Web server version: Apache Tomcat/8.5.32
+[2019-01-15 10:48:34,089]   INFO -  jetbrains.buildServer.STARTUP - Server IP address: 172.23.0.2
+[2019-01-15 10:48:34,092]   INFO -  jetbrains.buildServer.STARTUP - Web server ports: 8111 (protocol: HTTP/1.1, scheme: http), 8105 (shutdown port)
+[2019-01-15 10:48:34,093]   INFO -  jetbrains.buildServer.STARTUP - Context path: "/", servlet real path: "/opt/teamcity/webapps/ROOT"
+[2019-01-15 10:48:34,100]   INFO -  jetbrains.buildServer.STARTUP - TeamCity distribution type: docker-ubuntu
+[2019-01-15 10:48:34,100]   INFO -  jetbrains.buildServer.STARTUP - TeamCity server node id: MAIN_SERVER
+[2019-01-15 10:48:34,105]   INFO -  jetbrains.buildServer.STARTUP - Version file lock was successfully obtained: /opt/teamcity/webapps/ROOT/BUILD_60925
+[2019-01-15 10:48:34,118]   INFO -  jetbrains.buildServer.STARTUP - Current stage: Looking for the TeamCity Data Directory
+[2019-01-15 10:48:34,118]   INFO -  jetbrains.buildServer.STARTUP - The TeamCity Data Directory path is determined using the environment variable TEAMCITY_DATA_PATH
+[2019-01-15 10:48:34,127]   INFO -  jetbrains.buildServer.STARTUP - The TeamCity Data Directory "/data/teamcity_server/datadir" exists
+[2019-01-15 10:48:34,128]   INFO -  jetbrains.buildServer.STARTUP - Asking user to confirm first start with the predefined TeamCity Data Directory path
+[2019-01-15 10:48:34,141]   INFO -  jetbrains.buildServer.STARTUP - Startup confirmation is required. Open TeamCity web page in the browser. Server is running at http://localhost:8111
+[2019-01-15 10:48:34,142]   INFO -  jetbrains.buildServer.STARTUP - Current stage: Confirming TeamCity first start (administrator login is required to proceed)
+[2019-01-15 10:55:19,341]   INFO -  jetbrains.buildServer.STARTUP - Server shutdown event received
+[2019-01-15 10:55:19,341]   INFO -  jetbrains.buildServer.STARTUP - Current stage: TeamCity server is shutting down
+[2019-01-15 10:55:19,343]   INFO -  jetbrains.buildServer.STARTUP - Stopping the main application
+[2019-01-15 10:55:19,343]   INFO -  jetbrains.buildServer.STARTUP - The main servlet is not initialized, nothing to shut down.
+[2019-01-15 10:55:19,344]   INFO -  jetbrains.buildServer.STARTUP - Version file lock was released: /opt/teamcity/webapps/ROOT/BUILD_60925
+[2019-01-15 10:55:19,344]   INFO -  jetbrains.buildServer.STARTUP - Server shutdown complete

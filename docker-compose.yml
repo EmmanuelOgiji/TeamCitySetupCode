@@ -1,7 +1,7 @@
 version: '2'
 services:
   server:
-    image: jetbrains/teamcity-server
+    image: emmaogiji/teamcity_automated_deployment
     ports:
       - "8111:8111"
     volumes:

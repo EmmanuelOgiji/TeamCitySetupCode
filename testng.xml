@@ -3,9 +3,9 @@
 <suite name="example suite 1" verbose="1" >
     <test name="APITest" >
         <classes>
-            <class name="SuperUserToken"/>
+            <class name="GetSuperUserTokenandCreateAdminUser"/>
             <class name="CreateAdmin"/>
-            <class name="GetSuperUserTokenandCreateAdmin"/>
+            <class name="GetSuperUserToken"/>
         </classes>
     </test>
 </suite>

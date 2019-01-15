@@ -1,3 +1,6 @@
+import io.restassured.RestAssured;
+import io.restassured.http.ContentType;
+import io.restassured.response.Response;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -12,9 +15,10 @@ import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import static io.restassured.RestAssured.given;
 
 
-public class GetSuperUserTokenandCreateAdmin extends Setup {
+public class GetSuperUserTokenandCreateAdminUser extends Setup {
 
     private String getAndCompareTimeStamps(List<String> tokenLines) {
         Pattern pattern = Pattern.compile(Resources.returnRegExPattern("timestamp"), Pattern.DOTALL);
@@ -54,7 +58,7 @@ public class GetSuperUserTokenandCreateAdmin extends Setup {
 
 
     @Test
-    public void getSuperUserTokenandCreateAdmin() {
+    public void getSuperUserTokenandCreateAdminUser() {
         List<String> tokenLines = new ArrayList<>();
         Scanner scanner = null;
         String keyLine = null;
@@ -73,7 +77,7 @@ public class GetSuperUserTokenandCreateAdmin extends Setup {
             }
         }
         if (tokenLines.size() > 1) {
-            keyLine = getAndCompareTimeStamps(tokenLines);
+                keyLine = getAndCompareTimeStamps(tokenLines);
         }
         else {
             keyLine = tokenLines.get(0);
@@ -85,7 +89,17 @@ public class GetSuperUserTokenandCreateAdmin extends Setup {
             SuperUserToken = matcher.group(0);
 
         }
-        System.out.println("SuperUserToken is " + SuperUserToken);
-    }
+        System.out.println("GetSuperUserTokenandCreateAdminUser is " + SuperUserToken);
+        System.out.println("createAdminNewUser is running");
+        RestAssured.baseURI = prop.getProperty("HOST");
+        System.out.println(RestAssured.baseURI);
+        Response res = given().auth().basic("",SuperUserToken).
+                body(Resources.postAdminUserBody()).contentType(ContentType.JSON).header("Origin",prop.getProperty("HOST")).
+                when().
+                post(Resources.postNewUser()).
+                then().
+                extract().response();
+        System.out.println(res.asString());
+        }
 
 }
