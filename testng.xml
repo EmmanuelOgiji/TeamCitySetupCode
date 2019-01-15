@@ -5,6 +5,7 @@
         <classes>
             <class name="SuperUserToken"/>
             <class name="CreateAdmin"/>
+            <class name="GetSuperUserTokenandCreateAdmin"/>
         </classes>
     </test>
 </suite>

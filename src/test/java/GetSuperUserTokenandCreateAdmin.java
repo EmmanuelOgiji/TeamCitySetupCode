@@ -54,13 +54,13 @@ public class GetSuperUserTokenandCreateAdmin extends Setup {
 
 
     @Test
-    public void getSuperUserToken() {
+    public void getSuperUserTokenandCreateAdmin() {
         List<String> tokenLines = new ArrayList<>();
         Scanner scanner = null;
         String keyLine = null;
         String SuperUserToken = null;
         try {
-            scanner = new Scanner(new File("/Users/emmanuel.pius-ogiji/Downloads/TeamCity/logs/teamcity-server.log"));
+            scanner = new Scanner(new File("/opt/teamcity/logs/teamcity-server.log"));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
             System.out.println("File not found");
