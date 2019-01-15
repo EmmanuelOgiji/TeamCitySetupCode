@@ -1,7 +1,7 @@
 version: '2'
 services:
   server:
-    image: emmaogiji/teamcity_automated_deployment
+    image: emmaogiji/teamcity_automated_deployment:latest
     ports:
       - "8111:8111"
     volumes:
